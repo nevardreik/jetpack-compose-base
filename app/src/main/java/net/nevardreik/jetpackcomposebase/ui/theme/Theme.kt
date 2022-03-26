@@ -8,24 +8,24 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun JetpackComposeBaseTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
+	val colors = if (darkTheme) {
 		darkColors(
 			primary = MaterialTheme.colors.primary,
 			primaryVariant = MaterialTheme.colors.primaryVariant,
 			secondary = MaterialTheme.colors.secondary
 		)
-    } else {
+	} else {
 		lightColors(
 			primary = MaterialTheme.colors.primary,
 			primaryVariant = MaterialTheme.colors.primaryVariant,
 			secondary = MaterialTheme.colors.secondary
 		)
-    }
+	}
 
-    MaterialTheme(
-        colors = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+	MaterialTheme(
+		colors = colors,
+		typography = Typography,
+		shapes = Shapes,
+		content = content
+	)
 }
